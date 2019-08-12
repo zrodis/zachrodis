@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Yeseva+One&display=swap');
+
+
+header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background: #dfb600;
+}
+
+h1 {
+  /* font-family: 'Yeseva One', cursive; */
+  font-family: 'Fugaz One', cursive;
+  font-size: 90px;
+}

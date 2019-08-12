@@ -5,17 +5,34 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+import BigButton from "../components/BigButton"
+
+import AccordionImage from '../images/ah-wideimage'
+import '../styles/home.css'
+
+const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+
+    <BigButton
+      href='https://accordionhelper.com'
+      image={<AccordionImage />}
+      title='Accordion Helper'
+    />
+    
   </Layout>
 )
 
 export default IndexPage
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "ah_wideimage.png" }) {
+      childImageSharp {
+        fixed(width: 1746, height: 400) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`

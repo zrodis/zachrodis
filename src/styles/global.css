@@ -1,0 +1,11 @@
+a, a:-webkit-any-link {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+
+html{
+  background-color: white
+}
