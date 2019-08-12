@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => (
   <header>
   <Link
     to="/"
-    style={{color: '#bf7315'}}
+    className="zachrodis"
   >
     <div className="headerContainer">
       <h1 style={{ margin: 0 }}>

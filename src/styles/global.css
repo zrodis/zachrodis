@@ -7,18 +7,27 @@ a, a:-webkit-any-link {
 
 
 html{
-  background-color: white
+  background-color: black
 }
 
 h1 {
   /* font-family: 'Yeseva One', cursive; */
   font-family: 'Fugaz One', cursive;
-  font-size: 40px;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+@media all and (min-width: 430px) {
+  h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
 }
 
 
 @media all and (min-width: 900px) {
   h1 {
     font-size: 90px;
+    line-height: 90px;
   }
 }

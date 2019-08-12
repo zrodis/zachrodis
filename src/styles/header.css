@@ -1,17 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Fugaz+One|Yeseva+One&display=swap');
 
-
-header div {
-
-}
 .headerContainer{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 100px;
   background: #dfb600;
 }
 .headerContainer:hover {
   background: #490f07;
 
+}
+.headerContainer:hover > h1{
+  color: #dfb600;
+
+}
+
+.zachrodis div h1{
+color: #bf7315;
+
+}
+@media all and (min-width: 900px) {
+  .headerContainer{
+
+    height: 200px;
+
+  }
 }
