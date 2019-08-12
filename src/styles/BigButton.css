@@ -1,13 +1,17 @@
 .big-button{
-  position: absolute;
-    /* position: relative; */
+  /* position: absolute; */
+    position: relative;
     /* min-width: 100%; */
     width: 100%;
 }
-.big-button > .gatsby-image-wrapper{
-  background: rgba(0,0,0, 0.5);
+.big-button:hover > .big-button-overlay{
+  color: black;
+
+  background-color: rgba(255,255,255,0.2)
+
 
 }
+
 .big-button-overlay{
   position: absolute;
   display: flex;

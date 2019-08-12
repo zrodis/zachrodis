@@ -8,6 +8,8 @@ import SEO from "../components/seo"
 import BigButton from "../components/BigButton"
 
 import AccordionImage from '../images/ah-wideimage'
+import BuildPiggyImage from '../images/build-piggy-image'
+
 import '../styles/home.css'
 
 const IndexPage = ({data}) => (
@@ -20,6 +22,12 @@ const IndexPage = ({data}) => (
       title='Accordion Helper'
     />
     
+    <BigButton
+      href='https://www.kickstarter.com/projects/circleupstories/build-piggy-build'
+      image={<BuildPiggyImage />}
+      title='Illustration'
+    />
+
   </Layout>
 )
 

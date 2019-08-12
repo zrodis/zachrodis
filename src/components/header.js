@@ -6,16 +6,18 @@ import '../styles/header.css'
 
 const Header = ({ siteTitle }) => (
   <header>
-    <div>
+  <Link
+    to="/"
+    style={{color: '#bf7315'}}
+  >
+    <div className="headerContainer">
       <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{color: '#bf7315'}}
-        >
+
           {siteTitle}
-        </Link>
       </h1>
     </div>
+  </Link>
+
   </header>
 )
 

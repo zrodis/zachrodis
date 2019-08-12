@@ -2,15 +2,16 @@
 
 
 header div {
+
+}
+.headerContainer{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 200px;
   background: #dfb600;
 }
+.headerContainer:hover {
+  background: #490f07;
 
-h1 {
-  /* font-family: 'Yeseva One', cursive; */
-  font-family: 'Fugaz One', cursive;
-  font-size: 90px;
 }

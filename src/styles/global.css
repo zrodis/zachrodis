@@ -9,3 +9,16 @@ a, a:-webkit-any-link {
 html{
   background-color: white
 }
+
+h1 {
+  /* font-family: 'Yeseva One', cursive; */
+  font-family: 'Fugaz One', cursive;
+  font-size: 40px;
+}
+
+
+@media all and (min-width: 900px) {
+  h1 {
+    font-size: 90px;
+  }
+}
