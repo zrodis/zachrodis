@@ -20,7 +20,7 @@ const IndexPage = ({data}) => (
         href='https://accordionhelper.com'
         image={<AccordionImage />}
         title='Accordion Helper'
-        description="An interactive accordion chord chart. Made with React.js and Redux.\nUpdated monthly(-ish) based on community feedback.\nClick to vsit the site."
+        description="An interactive accordion chord chart. Made with React.js and Redux.\nUpdated monthly(-ish) based on user feedback.\nClick to visit the site."
       />
 
       <BigButton
