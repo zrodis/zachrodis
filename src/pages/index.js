@@ -16,19 +16,18 @@ const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
 
-
       <BigButton
         href='https://accordionhelper.com'
         image={<AccordionImage />}
         title='Accordion Helper'
-        description="An interactive accordion chord chart. Click to visit the site."
+        description="An interactive accordion chord chart. Made with React.js and Redux.\nUpdated monthly(-ish) based on community feedback.\nClick to vsit the site."
       />
 
       <BigButton
         href='https://www.kickstarter.com/projects/circleupstories/build-piggy-build'
         image={<BuildPiggyImage />}
         title='Build Piggy Build'
-        description="Illustrations for a card game. Click to visit the Kickstarter."
+        description="Illustrations for the card game.\nCollect all parts of a matching house to give your piggy a suburban paradise away from wolves.\nClick to visit the Kickstarter."
       />
 
 

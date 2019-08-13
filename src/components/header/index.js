@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 
 import Fade from 'react-reveal/Fade';
 
-import '../styles/header.css'
+import '../../styles/header.css'
 
 const Header = ({ siteTitle }) => (
   <header>

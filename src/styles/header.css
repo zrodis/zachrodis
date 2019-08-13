@@ -1,10 +1,12 @@
 
 .headerContainer{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  background: #dfb600;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+    height: 100px;
+    background: #dfb600;
 }
 .headerContainer:hover {
   background: #bf7315;
@@ -12,19 +14,15 @@
 
 }
 .headerContainer:hover > h1{
-
   color: #dfb600;
-
 }
 
-.zachrodis div h1{
-color: #bf7315;
+.zachrodis h1{
+  color: #bf7315;
 
 }
 @media all and (min-width: 900px) {
   .headerContainer{
-
-
 
   }
 }

@@ -5,15 +5,19 @@
 .big-button {
     flex: 1;
     position: relative;
-    /* min-width: 100%; */
     width: 100%;
-    /* height: calc(50vh - 50px); */
     transition: 400ms;
 }
+
 .big-button:hover > a .big-button-overlay {
   color: black;
   background-color: rgba(255,255,255,0.0);
 }
+.big-button:hover > a .big-button-overlay > .big-button-overlay-wrap{
+
+  background-color: rgba(255,255,255,0.5);
+}
+
 .big-button:hover > a .big-button-bg .gatsby-image-wrapper img{
   -webkit-filter: none;
   filter: none;
@@ -40,6 +44,8 @@
   display: flex;
   justify-content: center;
   background: rgba(255,255,255, 0.5);
+  overflow: hidden;
+  transition: 400ms;
 
 }
 
@@ -50,7 +56,7 @@
   position: static !important;
 }
 .big-button-bg .gatsby-image-wrapper img{
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 .big-button-bg .gatsby-image-wrapper div{
