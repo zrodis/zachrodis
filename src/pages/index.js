@@ -1,12 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
+import Fade from 'react-reveal/Fade';
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
 import BigButton from "../components/BigButton"
-
 import AccordionImage from '../images/ah-wideimage'
 import BuildPiggyImage from '../images/build-piggy-image'
 
@@ -16,19 +16,21 @@ const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
 
-    <BigButton
-      href='https://accordionhelper.com'
-      image={<AccordionImage />}
-      title='Accordion Helper'
-      animDelay={500}
-    />
 
-    <BigButton
-      href='https://www.kickstarter.com/projects/circleupstories/build-piggy-build'
-      image={<BuildPiggyImage />}
-      title='Card Game Illustration'
-      animDelay={1000}
-    />
+      <BigButton
+        href='https://accordionhelper.com'
+        image={<AccordionImage />}
+        title='Accordion Helper'
+        description="An interactive accordion chord chart. Click to visit the site."
+      />
+
+      <BigButton
+        href='https://www.kickstarter.com/projects/circleupstories/build-piggy-build'
+        image={<BuildPiggyImage />}
+        title='Build Piggy Build'
+        description="Illustrations for a card game. Click to visit the Kickstarter."
+      />
+
 
   </Layout>
 )

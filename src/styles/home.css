@@ -1,1 +1,16 @@
+main {
+  display: flex;
+  height: calc(100vh - 100px);
+  flex-flow: column nowrap;
+  align-items: stretch;
+}
 
+
+@media all and (min-width: 900px) {
+  main {
+
+
+
+  }
+
+}

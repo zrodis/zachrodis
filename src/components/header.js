@@ -14,7 +14,6 @@ const Header = ({ siteTitle }) => (
   >
     <div className="headerContainer">
 
-
       <Fade left cascade>
           <h1 style={{ margin: 0 }}>{siteTitle}</h1>
       </Fade>
