@@ -1,7 +1,9 @@
+import React from "react"
 import { Link } from "gatsby"
 import Img from 'gatsby-image'
-import PropTypes from "prop-types"
-import React from "react"
+
+import Fade from 'react-reveal/Fade';
+
 import '../styles/header.css'
 
 const Header = ({ siteTitle }) => (
@@ -11,22 +13,18 @@ const Header = ({ siteTitle }) => (
     className="zachrodis"
   >
     <div className="headerContainer">
-      <h1 style={{ margin: 0 }}>
 
-          {siteTitle}
-      </h1>
+
+      <Fade left cascade>
+          <h1 style={{ margin: 0 }}>{siteTitle}</h1>
+      </Fade>
+
+
     </div>
   </Link>
 
   </header>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: `Zach Rodis`,
-}
 
 export default Header

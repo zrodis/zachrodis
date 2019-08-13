@@ -20,12 +20,14 @@ const IndexPage = ({data}) => (
       href='https://accordionhelper.com'
       image={<AccordionImage />}
       title='Accordion Helper'
+      animDelay={500}
     />
-    
+
     <BigButton
       href='https://www.kickstarter.com/projects/circleupstories/build-piggy-build'
       image={<BuildPiggyImage />}
-      title='Illustration'
+      title='Card Game Illustration'
+      animDelay={1000}
     />
 
   </Layout>

@@ -1,7 +1,9 @@
 import React from "react"
 import '../styles/BigButton.css'
+import Fade from 'react-reveal/Fade';
+import Flip from 'react-reveal/Flip';
 
-export default ({href, image, title}) => (
+export default ({href, image, title, animDelay=0}) => (
 
   <a style={{color: 'black'}} href={href}>
     <div className='big-button'>
@@ -11,7 +13,10 @@ export default ({href, image, title}) => (
       </div>
       <div className='big-button-overlay'>
 
-        <h1>{title}</h1>
+        <Flip left cascade delay={animDelay}>
+          <h1>{title}</h1>
+        </Flip>
+
       </div>
     </div>
 

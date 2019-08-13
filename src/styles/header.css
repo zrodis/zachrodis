@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Yeseva+One&display=swap');
 
 .headerContainer{
   display: flex;
@@ -8,10 +7,12 @@
   background: #dfb600;
 }
 .headerContainer:hover {
-  background: #490f07;
+  background: #bf7315;
+  /* background: #490f07; */
 
 }
 .headerContainer:hover > h1{
+
   color: #dfb600;
 
 }
