@@ -164,6 +164,9 @@
     .big-button-description-mobile{
       display:none;
     }
+  .big-button-description a{
+    text-decoration: none
+  }
   .big-button-description{
     font-family: 'Ubuntu';
     font-weight: bold;

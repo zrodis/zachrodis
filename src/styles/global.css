@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fugaz+One|Roboto|Ubuntu&display=swap');
 
 
-a, a:-webkit-any-link {
+ a:-webkit-any-link, a {
   color: white;
   cursor: pointer;
   text-decoration: none;

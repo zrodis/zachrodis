@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React, {Fragment, useState, useEffect} from "react"
 import './BigButton.css'
 import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
@@ -28,9 +28,9 @@ export default (props) => {
     <div
 
       className={'big-button ' + (show ? 'stretched' : 'not-stretched')}
-      onPointerEnter={() => handleExpansion(id)}
+      onMouseEnter={() => handleExpansion(id)}
 
-      onPointerLeave={handleCollapse}
+      onMouseLeave={handleCollapse}
     >
           <div className='big-button-bg'> {image} </div>
           <div className='big-button-overlay'>
@@ -45,8 +45,8 @@ export default (props) => {
                     opacity: `${ show ? 1 : 0}`}
                 }
               >
-                {description.split('\\n').map(item => (<>{item}<br/> </>))}
-                <a href={ href } className="big-anchor" style={{visibility: `${ show ? 'visible' : 'hidden'}`} }>
+                {description.split('\\n').map((item, key) => (<Fragment key={key}>{item}<br/> </Fragment>))}
+                <a href={ href }  className="big-anchor" style={{visibility: `${ show ? 'visible' : 'hidden'}`} }>
                   <div className="clickout-button"> {'Go to ' + title + ' >'} </div>
                 </a>
               </div>

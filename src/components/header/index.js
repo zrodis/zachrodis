@@ -16,10 +16,6 @@ const Header = ({ siteTitle }) => {
     }
   }, [])
 
-  useEffect( (prevState) => {
-    console.log(prevState, shortHeader);
-  }, [shortHeader])
-
   function listenToScroll(evt){
     if(window.pageYOffset > 150 ){
       setShortHeader(true)
