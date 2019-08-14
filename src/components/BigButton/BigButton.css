@@ -9,20 +9,24 @@
     transition: 400ms;
 }
 
-.big-button:hover > a .big-button-overlay {
+.big-button:hover > .big-button-overlay {
   color: black;
-  /* color: #dfaf00; */
-  /* color: #bf7315; */
   background-color: rgba(255,255,255,0.0);
 }
-.big-button:hover > a .big-button-overlay > .big-button-overlay-wrap{
-
-  background-color: rgba(255,255,255,0.6);
-  /* background-color: rgba(0,0,0,0.6); */
+.big-button:hover > .big-button-overlay > .big-button-overlay-wrap h1{
+  text-shadow: 2px 2px white;
+}
+.big-button:hover > .big-button-overlay > .big-button-overlay-wrap{
+  background-color: rgba(255,255,255,0.8);
+  /* background: linear-gradient(rgba(255,255,255,0.05) 5%, rgba(255,255,255,0.8) 30%); */
   border-radius: 2px;
+  padding-top: 10px;
+  margin: 0;
+  position: absolute;
+  bottom: 0px;
 }
 
-.big-button:hover > a .big-button-bg .gatsby-image-wrapper img{
+.big-button:hover > .big-button-bg .gatsby-image-wrapper img{
   -webkit-filter: none;
   filter: none;
 }
@@ -39,18 +43,21 @@
   text-align: center;
   background-color: rgba(0,0,0,0.5);
   transition: 400ms;
-
 }
 
 .big-button-overlay-wrap{
   animation-name: introBigButton;
-  /* animation-delay: 200ms; */
   animation-duration: 1000ms;
+  width: 100%;
   padding: 4px;
+  margin: 10px;
 }
-.big-button-overlay-wrap div{
+/*
+.big-button-overlay-wrap a{
   color: black;
-}
+  pointer-events: auto;
+
+} */
 
 @keyframes introBigButton {
   from {  opacity: 0;}
@@ -60,40 +67,83 @@
 .big-button-description{
   font-family: 'Ubuntu';
   font-weight: bold;
-  font-size: 20px;
+  font-size: 14px;
+  line-height: 14px;
 
 }
 .big-button-bg{
   transition: 400ms;
-
 }
+
 .big-button-bg .gatsby-image-wrapper{
   position: static !important;
 }
-.big-button-bg .gatsby-image-wrapper img{
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
+
 .big-button-bg .gatsby-image-wrapper div{
   padding-bottom: 0 !important;
 }
 .react-reveal{
-  pointer-events: none;
+  /* pointer-events: none; */
   position: absolute;
 }
 
-.big-button-overlay div {
-  pointer-events: none;
-  /* transition: 500ms; */
 
+.clickout-button{
+  pointer-events: auto;
+  color:white;
+  background-color: rgba(0,0,0,0.9);
+  /* background-color: #bf7315; */
+  border-radius: 20px;
+  height: 40px;
+  width: 100%;
+  margin: 10px auto;
+
+  font-family: 'Fugaz One', cursive;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: inherit;
 }
-.big-button-overlay div h1{
-  pointer-events: none;
+
+.clickout-button:hover{
+  /* color:black; */
+  color:#bf7315;
+  background-color: #dfaf00;
 }
-@media all and (min-width: 900px) {
+@media all and (min-width: 420px) {
 
-  .big-button {
 
-      /* height: calc(50vh - 100px); */
+  .big-button-bg .gatsby-image-wrapper img{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  .big-button:hover > .big-button-overlay > .big-button-overlay-wrap{
+    background: linear-gradient(rgba(255,255,255,0.05) 5%, rgba(255,255,255,0.75) 45%);
+
+  }
+  .big-button:hover > .big-button-overlay > .big-button-overlay-wrap h1{
+    text-shadow: 4px 4px white;
+  }
+
+  .big-button-description{
+
+    font-weight: normal;
+    line-height: 18px;
+    font-size: 18px;
+
+  }
+
+  .clickout-button{
+    color:white;
+    background-color: rgba(0,0,0,0.9);
+    height: 40px;
+    width: 50%;
+    margin: 10px auto;
+
+    font-size: 20px;
+
   }
 }

@@ -5,17 +5,21 @@ main {
   align-items: stretch; */
 }
 .bigButtonContainer{
-  height: calc(110vh );
+  height: calc(180vh );
   display: flex;
   flex-flow: column nowrap;
   align-items: stretch;
 }
 
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 420px) {
   main {
 
 
+
+  }
+  .bigButtonContainer{
+    height: calc(110vh );
 
   }
 
