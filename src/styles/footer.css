@@ -1,0 +1,22 @@
+footer{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footerLink{
+  font-weight: bold;
+  color: #dfaf00 !important;
+}
+.finePrint{
+  font-size: 12px;
+}

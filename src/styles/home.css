@@ -1,6 +1,12 @@
 main {
+  /* display: flex;
+
+  flex-flow: column nowrap;
+  align-items: stretch; */
+}
+.bigButtonContainer{
+  height: calc(110vh );
   display: flex;
-  height: calc(100vh - 100px);
   flex-flow: column nowrap;
   align-items: stretch;
 }

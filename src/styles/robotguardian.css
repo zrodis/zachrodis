@@ -1,0 +1,22 @@
+.video-react{
+  font-family: 'Ubuntu', sans-serif !important;
+}
+
+.video-react-control-bar{
+  background-color: rgba(0,0,0, 0.2) !important;
+}
+.video-react-big-play-button {
+  border: none !important;
+  width: 44px !important;
+  height: 44px !important;
+
+  border-radius: 80px !important;
+  top: calc(50% - 24px) !important;
+  left: calc(50% - 24px) !important;
+
+  background-color: rgba(0,0,0, 0.5) !important;
+}
+
+.video-react-big-play-button-left{
+
+}

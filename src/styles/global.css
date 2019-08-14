@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Roboto|Ubuntu&display=swap');
 
 
 a, a:-webkit-any-link {
@@ -10,9 +10,12 @@ a, a:-webkit-any-link {
 
 
 html{
-  background-color: black
+  background-color: #333;
+  color: #fffad4;
 }
-
+main{
+  min-height: 80vh;
+}
 h1 {
   /* font-family: 'Yeseva One', cursive; */
   font-family: 'Fugaz One', cursive;
@@ -24,6 +27,21 @@ h2 {
   font-family: 'Fugaz One', cursive;
   font-size: 20px;
   line-height: 20px;
+}
+h3 {
+  /* font-family: 'Yeseva One', cursive; */
+  font-family: 'Fugaz One', cursive;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+body, main{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+}
+p {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
 }
 
 @media all and (min-width: 430px) {

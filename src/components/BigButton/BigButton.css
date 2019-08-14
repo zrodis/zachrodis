@@ -11,11 +11,15 @@
 
 .big-button:hover > a .big-button-overlay {
   color: black;
+  /* color: #dfaf00; */
+  /* color: #bf7315; */
   background-color: rgba(255,255,255,0.0);
 }
 .big-button:hover > a .big-button-overlay > .big-button-overlay-wrap{
 
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.6);
+  /* background-color: rgba(0,0,0,0.6); */
+  border-radius: 2px;
 }
 
 .big-button:hover > a .big-button-bg .gatsby-image-wrapper img{
@@ -33,23 +37,34 @@
   font-family: 'Fugaz One', cursive;
   color: white;
   text-align: center;
-  background-color: rgba(0,0,0,0.5)
-}
-
-.big-button-overlay-wrapper{
-  position: relative;
-}
-.big-button-overlay-wrapper div{
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  background: rgba(255,255,255, 0.5);
-  overflow: hidden;
+  background-color: rgba(0,0,0,0.5);
   transition: 400ms;
 
 }
 
+.big-button-overlay-wrap{
+  animation-name: introBigButton;
+  /* animation-delay: 200ms; */
+  animation-duration: 1000ms;
+  padding: 4px;
+}
+.big-button-overlay-wrap div{
+  color: black;
+}
+
+@keyframes introBigButton {
+  from {  opacity: 0;}
+  to {  opacity: 1}
+}
+
+.big-button-description{
+  font-family: 'Ubuntu';
+  font-weight: bold;
+  font-size: 20px;
+
+}
 .big-button-bg{
+  transition: 400ms;
 
 }
 .big-button-bg .gatsby-image-wrapper{

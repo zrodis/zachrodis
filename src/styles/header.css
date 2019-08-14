@@ -1,19 +1,44 @@
-
-.headerContainer{
+header{
   display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /* align-content: center; */
-    height: 100px;
-    background: #dfb600;
+  position: sticky;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  /* height: 0px; */
+  /* height: 100px; */
+  background: #dfaf00;
+  color: #bf7315;
+
+  overflow: hidden;
+  transition: 100ms;
+  animation-name: introHeader;
+  animation-duration: 500ms;
+  z-index:10;
 }
-.headerContainer:hover {
-  background: #bf7315;
+
+@keyframes introHeader {
+  from {  height: 0px;}
+  to {  height: 100px;}
+}
+
+header:hover{
+  background: #dda94b;
+}
+.zachrodisContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  /* align-content: center; */
+}
+.zachrodisContainer:hover {
+  /* background: #bf7315; */
   /* background: #490f07; */
 
 }
-.headerContainer:hover > h1{
+.zachrodisContainer:hover > a h1{
   color: #dfb600;
 }
 
@@ -21,8 +46,44 @@
   color: #bf7315;
 
 }
-@media all and (min-width: 900px) {
-  .headerContainer{
 
+.DesktopNav{
+  position: sticky;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  /* background: inherit; */
+  color: inherit;
+
+}
+
+.DesktopHeaderLink {
+  margin: 0 10px;
+
+}
+
+.DesktopHeaderLink a h2 {
+  /* background: #dfb600; */
+  color: #bf7315;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.DesktopHeaderLink:hover > a h2 {
+  color: #dfb600;
+
+}
+@media all and (min-width: 420px) {
+  .zachrodisContainer{
+    margin-bottom: 0px;
+
+  }
+  .DesktopHeaderLink a h2 {
+
+    font-size: 22px;
+    line-height: 20px;
   }
 }
