@@ -5,13 +5,20 @@ main {
   align-items: stretch; */
 }
 .bigButtonContainer{
-  height: calc(180vh );
+  height: calc(230vh );
   display: flex;
   flex-flow: column nowrap;
   align-items: stretch;
 }
 
 
+@media all and (min-width: 900px) {
+  .bigButtonContainer{
+
+    height: 170vh;
+  }
+
+}
 @media all and (min-width: 420px) {
   main {
 

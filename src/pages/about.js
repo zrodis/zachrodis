@@ -33,8 +33,9 @@ const AboutPage = ({data}) => (
 
       <h3>Here is my <a href="https://github.com/zipfreeman"><strong>github.</strong></a></h3>
       <p>
-      I do prefer using my git repo at home on my raspberry pi since it makes me feel like a cool hacker typing in bash and putting things on my local network where other cool hackers can't hack it.
-      Also, don't tell anyone, but it's under Zip Freeman, my alter ego. Dang I shouldn't have put that information on the internet, oh well too late now, can't undo.
+
+        Don't tell anyone, but it's under the alias Zip Freeman. Dang I shouldn't have put that information on the internet, oh well too late now, can't undo.
+        Mainly though I use my raspberry pi as a repo.
       </p>
       I live in Philadelphia.
     </div>

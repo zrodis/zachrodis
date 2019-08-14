@@ -9,27 +9,6 @@
     transition: 400ms;
 }
 
-.big-button:hover > .big-button-overlay {
-  color: black;
-  background-color: rgba(255,255,255,0.0);
-}
-.big-button:hover > .big-button-overlay > .big-button-overlay-wrap h1{
-  text-shadow: 2px 2px white;
-}
-.big-button:hover > .big-button-overlay > .big-button-overlay-wrap{
-  background-color: rgba(255,255,255,0.8);
-  /* background: linear-gradient(rgba(255,255,255,0.05) 5%, rgba(255,255,255,0.8) 30%); */
-  border-radius: 2px;
-  padding-top: 10px;
-  margin: 0;
-  position: absolute;
-  bottom: 0px;
-}
-
-.big-button:hover > .big-button-bg .gatsby-image-wrapper img{
-  -webkit-filter: none;
-  filter: none;
-}
 
 .big-button-overlay{
   position: absolute;
@@ -64,13 +43,8 @@
   to {  opacity: 1}
 }
 
-.big-button-description{
-  font-family: 'Ubuntu';
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 14px;
 
-}
+
 .big-button-bg{
   transition: 400ms;
 }
@@ -92,7 +66,9 @@
   pointer-events: auto;
   color:white;
   background-color: rgba(0,0,0,0.9);
-  /* background-color: #bf7315; */
+  /* color:#bf7315;
+  background-color: #dfaf00; */
+
   border-radius: 20px;
   height: 40px;
   width: 100%;
@@ -107,28 +83,16 @@
   opacity: inherit;
 }
 
-.clickout-button:hover{
-  /* color:black; */
-  color:#bf7315;
-  background-color: #dfaf00;
+.stretched{
+  flex: 2;
 }
+.not-stretched{
+  flex: 2;
+}
+/*  tablet and desktop*/
 @media all and (min-width: 420px) {
 
-
-  .big-button-bg .gatsby-image-wrapper img{
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-  }
-
-  .big-button:hover > .big-button-overlay > .big-button-overlay-wrap{
-    background: linear-gradient(rgba(255,255,255,0.05) 5%, rgba(255,255,255,0.75) 45%);
-
-  }
-  .big-button:hover > .big-button-overlay > .big-button-overlay-wrap h1{
-    text-shadow: 4px 4px white;
-  }
-
-  .big-button-description{
+  .big-button-description-mobile{
 
     font-weight: normal;
     line-height: 18px;
@@ -146,4 +110,114 @@
     font-size: 20px;
 
   }
+}
+
+/*  tablet and phone*/
+@media all and (max-width: 900px) {
+  .big-button-description{
+    display: none;
+  }
+
+  .big-button-description-mobile{
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .big-anchor{
+    visibility: visible !important;
+  }
+  .big-button > .big-button-overlay {
+    color: black;
+    background-color: rgba(255,255,255,0.0);
+  }
+  .big-button > .big-button-overlay > .big-button-overlay-wrap h1{
+    text-shadow: 2px 2px white;
+  }
+  .big-button > .big-button-overlay > .big-button-overlay-wrap{
+    background-color: rgba(255,255,255,0.8);
+    /* background: linear-gradient(rgba(255,255,255,0.05) 5%, rgba(255,255,255,0.8) 30%); */
+    border-radius: 2px;
+    padding-top: 10px;
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+  }
+  .big-button > .big-button-bg .gatsby-image-wrapper img{
+    -webkit-filter: none;
+    filter: none;
+  }
+
+  .big-button > .big-button-overlay > .big-button-overlay-wrap{
+    background: linear-gradient(rgba(255,255,255,0.05) 5%, rgba(255,255,255,0.75) 45%);
+
+  }
+  .big-button > .big-button-overlay > .big-button-overlay-wrap h1{
+    text-shadow: 4px 4px white;
+  }
+}
+
+/* desktop specific */
+@media all and (min-width: 900px) {
+
+    .big-button-description-mobile{
+      display:none;
+    }
+  .big-button-description{
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+
+  }
+
+  .big-button:hover > .big-button-overlay {
+    color: black;
+    background-color: rgba(255,255,255,0.0);
+  }
+  .big-button:hover > .big-button-overlay > .big-button-overlay-wrap h1{
+    text-shadow: 2px 2px white;
+  }
+  .big-button:hover > .big-button-overlay > .big-button-overlay-wrap{
+    background-color: rgba(255,255,255,0.8);
+    /* background: linear-gradient(rgba(255,255,255,0.05) 5%, rgba(255,255,255,0.8) 30%); */
+    border-radius: 2px;
+    padding-top: 10px;
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+  }
+  .big-button:hover > .big-button-bg .gatsby-image-wrapper img{
+    -webkit-filter: none;
+    filter: none;
+  }
+
+  .big-button:hover > .big-button-overlay > .big-button-overlay-wrap{
+    background: linear-gradient(rgba(255,255,255,0.05) 5%, rgba(255,255,255,0.75) 45%);
+
+  }
+  .big-button:hover > .big-button-overlay > .big-button-overlay-wrap h1{
+    text-shadow: 4px 4px white;
+  }
+  .clickout-button:hover{
+    /* color:black; */
+    /* color:#bf7315; */
+    color:#f4db5d;
+    /* background-color: #dfaf00; */
+    background-color: #26a9bc;
+  }
+
+  .big-button-bg .gatsby-image-wrapper img{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  .stretched{
+    flex: 3;
+  }
+  .not-stretched{
+    flex: 2;
+  }
+
 }

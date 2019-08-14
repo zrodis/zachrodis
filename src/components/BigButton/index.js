@@ -23,20 +23,14 @@ export default (props) => {
     leave: { opacity: 0, height: 0},
   })
 
-  function clickOut(evt){
-
-    // window.open(href, "_self");
-  }
-
   return (
 
     <div
-      style={{flex: `${ show ? 3 : 2}`} }
-      className='big-button'
+
+      className={'big-button ' + (show ? 'stretched' : 'not-stretched')}
       onPointerEnter={() => handleExpansion(id)}
-      onTouchStart={() =>  handleExpansion(id)}
+
       onPointerLeave={handleCollapse}
-      onPointerUp={clickOut}
     >
           <div className='big-button-bg'> {image} </div>
           <div className='big-button-overlay'>
@@ -57,15 +51,14 @@ export default (props) => {
                 </a>
               </div>
 
-
+              <div className="big-button-description-mobile">
+                <a href={ href } className="big-anchor" >
+                  <div className="clickout-button"> {'Go to ' + title + ' >'} </div>
+                </a>
+              </div>
 
             </div>
-
-
-
           </div>
-
-
 
     </div>
   )

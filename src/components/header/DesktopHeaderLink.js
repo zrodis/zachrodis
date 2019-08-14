@@ -7,7 +7,7 @@ export default ({title, to}) => (
     <Link
       to={to}
     >
-      <h2 style={{ margin: 0 }}>{title}</h2>
+      <h2 >{title}</h2>
     </Link>
   </div>
 )

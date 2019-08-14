@@ -14,21 +14,21 @@ import RobotGuardianImage from '../images/robotguardian-wideimage'
 
 import '../styles/home.css'
 
+const bigButtonData = [
+  {
+  href: 'https://accordionhelper.com',
+  image:<AccordionImage />,
+  title:'Accordion Helper',
+  description:"Accordion Helper is an interactive accordion chord chart made with React.js and Redux.\nIt helps accordion players figure out chords and fingering variations.\n Updated monthly(-ish) based on user feedback.",
+  }
+]
 
-/*// TODO:
-add state control for BigButton highlighing
-get rid of anchor tags and replace with window.open
-OR
-hide anchor unless the BB is selected
-by either state or navigation.userAgent
-*/
 const IndexPage = ({data}) => {
 
   let [show, setShow] = useState(0)
 
 
   function handleExpansion(id){
-    console.log('handleExpansion', id);
     setShow(id)
   }
 
@@ -40,6 +40,9 @@ const IndexPage = ({data}) => {
   <Layout>
     <SEO title="Home" />
     <div className="bigButtonContainer">
+
+      {}
+
       <BigButton
         id={4}
         show={show === 4}
@@ -66,7 +69,7 @@ const IndexPage = ({data}) => {
       <BigButton
         id={2}
         show={show === 2}
-        handleExpansion={(id) => handleExpansion(id)}
+        handleExpansion={(params) => handleExpansion(params)}
         handleCollapse={handleCollapse}
 
         href='https://zrodis-clocktower.herokuapp.com/'
@@ -92,15 +95,3 @@ const IndexPage = ({data}) => {
 )}
 
 export default IndexPage
-
-export const query = graphql`
-  query {
-    file(relativePath: { eq: "ah_wideimage.png" }) {
-      childImageSharp {
-        fixed(width: 1746, height: 400) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-  }
-`

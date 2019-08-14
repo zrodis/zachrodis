@@ -39,11 +39,21 @@ header:hover{
 
 }
 .zachrodisContainer:hover > a h1{
-  color: #dfb600;
+  color: #f4db5d;
+
+  text-shadow: 10px 5px #26a9bc;
+  padding-right: 6px;
+  /* padding-bottom: 16px; */
+
+/* color: #26a9bc; */
 }
 
 .zachrodis h1{
-  color: #bf7315;
+  /* color: #bf7315; */
+
+  text-shadow: 5px 5px #26a9bc;
+/* color: #ead853; */
+color: #fff;
 
 }
 
@@ -70,10 +80,28 @@ header:hover{
   color: #bf7315;
   font-size: 16px;
   line-height: 20px;
+  margin-left: 4px;
+  margin-right: 4px;
+
 }
+/* .DesktopHeaderLink:first-child a h2 {
+
+
+  text-shadow: 3px 3px #26a9bc;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+} */
 
 .DesktopHeaderLink:hover > a h2 {
-  color: #dfb600;
+  color: #f4db5d;
+  text-shadow: 4px 0px #26a9bc;
+padding-right: 4px;
+padding-left: 0px;
+   margin-left: 2px;
+   margin-right: 2px;
+
+
 
 }
 @media all and (min-width: 420px) {
