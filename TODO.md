@@ -17,3 +17,7 @@ main page add:
 update readme i guess
 
 React.Context for a bunch of themes
+
+svg stroke animation for the header
+
+some kind of api, maybe showing the weather would be cute

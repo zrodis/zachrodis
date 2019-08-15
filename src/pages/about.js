@@ -1,9 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-
 import SEO from "../components/seo"
+import BigLink from "../components/BigLink"
 
 
 import '../styles/home.css'
@@ -30,10 +29,8 @@ const AboutPage = ({data}) => (
     </div>
 
     <div style={{margin: '20px'}}>
-
-      <h3>Here is my <a href="https://github.com/zipfreeman"><strong>github.</strong></a></h3>
+      <BigLink to="https://github.com/zipfreeman" title="Here is my github."/>
       <p>
-
         Don't tell anyone, but it's under the alias Zip Freeman. Dang I shouldn't have put that information on the internet, oh well too late now, can't undo.
         Mainly though I use my raspberry pi as a repo.
       </p>
@@ -41,21 +38,9 @@ const AboutPage = ({data}) => (
     </div>
     <div style={{margin: '20px'}}>
         I do commissions for websites, webapps, mobile apps, or illustrations.
-        <Link to="/contact"><h3>contact me</h3></Link>
+        <BigLink to="/contact" title="contact me"/>
     </div>
   </Layout>
 )
 
 export default AboutPage
-
-export const query = graphql`
-  query {
-    file(relativePath: { eq: "ah_wideimage.png" }) {
-      childImageSharp {
-        fixed(width: 1746, height: 400) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-  }
-`

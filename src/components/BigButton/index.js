@@ -1,8 +1,6 @@
-import React, {Fragment, useState, useEffect} from "react"
+import React, {Fragment} from "react"
 import './BigButton.css'
 import Fade from 'react-reveal/Fade';
-import Flip from 'react-reveal/Flip';
-import {useTransition, animated} from 'react-spring'
 
 
 export default (props) => {
@@ -16,12 +14,6 @@ export default (props) => {
     id,
     show,
   } = props
-
-  const transitions = useTransition(show, null, {
-    from: {  opacity: 0, height: 0 },
-    enter: { opacity: 1, height:'auto'},
-    leave: { opacity: 0, height: 0},
-  })
 
   return (
 

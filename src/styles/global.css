@@ -1,20 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Fugaz+One|Roboto|Ubuntu&display=swap');
 
-
+.flexCenterColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
  a:-webkit-any-link, a {
   color: white;
   cursor: pointer;
   text-decoration: none;
 }
 
+.yellowLink{
+  font-weight: bold;
+  color: #dfaf00 !important;
+}
+.yellowLink:hover{
 
+  color: #fff !important;
+}
 
 html{
-  background-color: #333;
+  background-color: #353433;
   color: #fffad4;
 }
+body{
+
+}
 main{
-  min-height: 80vh;
+  min-height: 70vh;
+
 }
 h1 {
   /* font-family: 'Yeseva One', cursive; */

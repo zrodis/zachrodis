@@ -5,19 +5,43 @@ footer{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
-}
+  margin-top: 20px;
 
+
+}
+.footerLineDivider{
+    width: 75%;
+
+    height:1px;
+    border-top: dotted 1px #f6f6f680;
+    margin-bottom: 20px;
+    margin-left: 12.5%;
+}
 .footerWrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 }
-.footerLink{
-  font-weight: bold;
-  color: #dfaf00 !important;
+.footerLinks{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.footerDot{
+  margin:0 10px;
 }
 .finePrint{
   font-size: 12px;
+}
+@media all and (max-width: 768px){
+  .footerLinks{
+    flex-direction: column;
+
+  }
+  .footerDot{
+    display: none;
+  }
 }

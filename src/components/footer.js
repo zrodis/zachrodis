@@ -6,7 +6,7 @@ import Img from 'gatsby-image'
 import '../styles/footer.css'
 
 const FooterLink = ({to, title}) => {
-  return <a className="footerLink" href={to}>{title}</a>
+  return <a className="yellowLink" href={to}>{title}</a>
 }
 
 
@@ -14,13 +14,18 @@ const Footer = () => {
 
   return(
     <footer>
+      <div className="footerLineDivider"/ >
+
       <div className="footerWrapper">
-      <div>
-        <FooterLink to={"https://www.circleupstories.com/"} title={"Circle Up Stories"}/> • <FooterLink to={"https://kimfolse.com/"} title={"Kim Folse"}/> • <FooterLink to={"http://rodis.net/"} title={"rodis.net"}/> 
-      </div>
-      <div className="finePrint" >
-        ©2019 Zach Rodis - Built with <FooterLink to={"https://reactjs.org/"} title={"React.js"}/> and <FooterLink to={"https://www.gatsbyjs.org/"} title={"Gatsby.js"}/></div>
-      </div>
+
+        <div className="footerLinks">
+          <FooterLink to={"/builtwith"} title={"What is this site built with?"}/>
+          <div className="footerDot">•</div>
+          <FooterLink to={"/friends"} title={"Friends and Family websites"}/>
+
+        </div>
+          <div className="finePrint" > ©2019 Zach Rodis </div>
+        </div>
 
     </footer>
   )

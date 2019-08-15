@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import {Player} from 'video-react'
 import "../../node_modules/video-react/dist/video-react.css";
 import Layout from '../components/layout'
@@ -8,6 +7,7 @@ import SEO from '../components/seo'
 
 import '../styles/robotguardian.css'
 import video from '../images/RobotGuardianVid.mp4'
+import BigLink from "../components/BigLink"
 
 
 const RobotPage = ({data}) => (
@@ -34,6 +34,8 @@ const RobotPage = ({data}) => (
         <p>
           From the most recent defeat of the evil dinosaurs threatening dominance of the earth, to his battle with earth-magma-monsters over 4 billion years ago, to his pre-time war with the King of the Thirteenth Dimension who hatched a scheme to stop the Big Bang from creating the universe, the Robot Guardian will always be there to watch over you.
         </p>
+        video mirror: <BigLink to={'http://robotguardian.us/'} title={'robotguardian.us'}/>
+
         </div>
 
     </div>

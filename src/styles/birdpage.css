@@ -1,0 +1,27 @@
+.cls-1,.cls-4,.cls-6{fill:none;}
+/* .cls-1,.cls-4{stroke:#231f20;} */
+.cls-1,.cls-3,.cls-4{stroke-miterlimit:10;}
+.cls-1,.cls-3{stroke-width:5px;}
+/* .cls-2,.cls-3{fill:#f9be03;} */
+.cls-3,.cls-6{stroke:#fff;}
+.cls-4{stroke-width:5px;}
+/* .cls-5{fill:#231f20;} */
+.cls-6{
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-width: 13.48px;
+}
+
+svg {
+  /* height: 1000px;
+  width: 500px; */
+  margin: 50px;
+  stroke-width: 2;
+  fill:none ;
+  stroke: rgb(255,255,255);
+
+ stroke-linejoin:square ;
+ stroke-dasharray:1000 ;
+ /* stroke-linecap: square; */
+
+}

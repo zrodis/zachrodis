@@ -23,7 +23,15 @@ const Header = ({ siteTitle }) => {
       setShortHeader(false)
     }
   }
+/*
 
+  <div className="headerBGContainer">
+    <div style={{background:"#C1666B", flex: '5'}}></div>
+    <div style={{background:"#F7DC7B", flex: '16'}}></div>
+    <div style={{background:"#C1666B", flex: '13'}}></div>
+
+  </div>
+*/
   return(
   <header style={{height: (shortHeader ? '50px': '100px')}}>
 

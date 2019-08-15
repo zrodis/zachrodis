@@ -1,9 +1,5 @@
 import React, {useState} from "react"
-import { Link } from "gatsby"
-import Fade from 'react-reveal/Fade';
-
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 import BigButton from "../components/BigButton"
