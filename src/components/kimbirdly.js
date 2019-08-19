@@ -11,7 +11,7 @@ and "stroke-dashoffset" should be adjusted to the specific length of the line th
 
 lower 'tension' to go slower
 higher fiction to go faster
-
+upper case now
 
 */
 
