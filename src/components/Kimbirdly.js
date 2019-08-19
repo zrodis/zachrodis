@@ -4,10 +4,10 @@ import {Spring } from 'react-spring/renderprops'
 import '../styles/birdpage.css'
 /*
 svg stroke animation:
-BOTH css property "stroke-dasharray"
-and "stroke-dashoffset" should be adjusted to the specific length of the line they are animating
+both css property "stroke-dasharray"
+AND "stroke-dashoffset" should be adjusted to the specific length of the line they are animating
 
-"viewBow" important to have to keep the vector scaleable
+"viewBox" important to have to keep the vector scaleable
 
 lower 'tension' to go slower
 higher fiction to go faster

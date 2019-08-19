@@ -35,11 +35,13 @@ const contactSubmitComponent = (ContactSumbit, name) => {
         <ContactSumbit {...this.props}>
 
             <p>
-            <label>Your Name: <input type="text" name="name" /></label>
+            <label>Your Name: <br/>
+            <input type="text" name="name" /></label>
             </p>
 
             <p>
-            <label>Your Email: <input type="email" name="email" /></label>
+            <label>Your Email: <br/>
+            <input type="email" name="email" /></label>
             </p>
 
             <p>
