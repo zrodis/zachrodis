@@ -22,22 +22,10 @@ const HelloContact = (props) =>{
   return <div>
     hello
     <form name={'hello-test'} method="POST" data-netlify="true">
-
+      <input type="hidden" name="form-name" value="hello-test" />
       <p>
         <label>Message:
         <textarea name="message"></textarea></label>
-      </p>
-
-      <p>
-      <label>Your Name: <input type="text" name="name" /></label>
-      </p>
-
-      <p>
-      <label>Your Email: <input type="email" name="email" /></label>
-      </p>
-
-      <p>
-      <button type="submit">Send</button>
       </p>
 
       {props.children}
@@ -63,7 +51,7 @@ const ContactPage = ({data}) => {
       </div>
       <br/>
 
-      <HelloContact className="test-class" />
+      <EnhancedHelloContact className="test-class" />
     </Layout>
   )
 }
