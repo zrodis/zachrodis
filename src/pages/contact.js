@@ -28,6 +28,18 @@ const HelloContact = (props) =>{
         <textarea name="message"></textarea></label>
       </p>
 
+      <p>
+      <label>Your Name: <input type="text" name="name" /></label>
+      </p>
+
+      <p>
+      <label>Your Email: <input type="email" name="email" /></label>
+      </p>
+
+      <p>
+      <button type="submit">Send</button>
+      </p>
+
       {props.children}
     </form>
 
@@ -51,7 +63,7 @@ const ContactPage = ({data}) => {
       </div>
       <br/>
 
-      <EnhancedHelloContact className="test-class" />
+      <HelloContact className="test-class" />
     </Layout>
   )
 }
