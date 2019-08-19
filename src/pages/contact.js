@@ -21,11 +21,21 @@ const HelloContact = (props) =>{
   console.log('HelloContact props', props);
   return <div>
     hello
+    <form name={'hello-test'} method="POST" data-netlify="true">
 
-    {props.children}
+      <p>
+        <label>Message:
+        <textarea name="message"></textarea></label>
+      </p>
+
+      {props.children}
+    </form>
+
+
+
   </div>
 }
-
+const EnhancedHelloContact = contactSubmitComponent(HelloContact, 'hello-test')
 
 const ContactPage = ({data}) => {
   const [ contactType, setContactType ] = useState('hello')
@@ -39,8 +49,9 @@ const ContactPage = ({data}) => {
           <p>If you want to follow me on social media, sorry not much there.</p>
           <p>Please email about websites, apps, or illustrations.</p>
       </div>
+      <br/>
 
-
+      <EnhancedHelloContact className="test-class" />
     </Layout>
   )
 }

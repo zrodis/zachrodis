@@ -20,12 +20,13 @@ would {children} pass down from 'ContactSubmit' param being passed in?
 */
 
 
-const contactSubmitComponent = (ContactSumbit) => {
+const contactSubmitComponent = (ContactSumbit, name) => {
   class ComposedContactSumbit extends React.Component {
 
     handleSubmit(){
       console.log('handleSubmit');
       //post to netlify api
+      //or netlify just does this all autmatically
     }
 
     render(){
@@ -33,11 +34,18 @@ const contactSubmitComponent = (ContactSumbit) => {
       return(
         <ContactSumbit {...this.props}>
 
-          <div>Your Name:</div>
-          <input/>
-          <div>Your Email</div>
-          <input/><br/>
-          <button onClick={this.handleSubmit}> Submit </button>
+            <p>
+            <label>Your Name: <input type="text" name="name" /></label>
+            </p>
+
+            <p>
+            <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+
+            <p>
+            <button type="submit">Send</button>
+            </p>
+
 
         </ContactSumbit>
       )

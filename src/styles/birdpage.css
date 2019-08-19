@@ -13,8 +13,8 @@
 }
 
 svg {
-  /* height: 1000px;
-  width: 500px; */
+  height: 100%;
+  width: 100%;
   margin: 50px;
   stroke-width: 2;
   fill:none ;
@@ -24,4 +24,8 @@ svg {
  stroke-dasharray:1000 ;
  /* stroke-linecap: square; */
 
+}
+
+.Kimbirdly{
+  height:90vh;
 }
