@@ -2,7 +2,6 @@ import React, {useState, useEffect} from "react"
 import { Link } from "gatsby"
 import { Location } from '@reach/router';
 
-import HeronIcon from '../../images/heron_icon'
 import DesktopLink from './DesktopHeaderLink'
 import SVGAnimation from './SVGAnimation'
 

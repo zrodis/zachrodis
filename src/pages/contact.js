@@ -1,10 +1,9 @@
 import React, {useState} from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import contactSubmitComponent from '../components/forms/contactSubmitComponent'
+// import contactSubmitComponent from '../components/forms/contactSubmitComponent'
 import HelloContact from '../components/forms/HelloContact'
 // import ContactTypes from '../components/forms/ContactTypeDropdown'
 

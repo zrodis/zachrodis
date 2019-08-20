@@ -1,6 +1,5 @@
 import React, {Fragment} from "react"
 import './BigButton.css'
-import Fade from 'react-reveal/Fade';
 
 
 export default (props) => {
@@ -18,10 +17,8 @@ export default (props) => {
   return (
 
     <div
-
       className={'big-button ' + (show ? 'stretched' : 'not-stretched')}
       onMouseEnter={() => handleExpansion(id)}
-
       onMouseLeave={handleCollapse}
     >
           <div className='big-button-bg'> {image} </div>
@@ -55,25 +52,3 @@ export default (props) => {
     </div>
   )
 }
-
-
-/*
-<a style={{color: 'black'}} href={ href } className="big-anchor">
-
-    <div className='big-button-bg'> {image} </div>
-    <div className='big-button-overlay'>
-
-      <div className="big-button-overlay-wrap" >
-        <h1>{title}</h1>
-        <div className="big-button-description"
-              style={{height: `${ show ? 'auto' : 0}`, opacity: `${ show ? 1 : 0}`}}
-        >
-          {description.split('\\n').map(item => (<>{item}<br/> </>))}
-        </div>
-
-      </div>
-
-    </div>
-</a>
-
-*/

@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from 'prop-types'
 
 /*
 what functions do the forms have in common?
@@ -16,7 +15,7 @@ what functions do the forms have in common?
 2. apply the common elements from the HOC
    - for example, the things that all contactSubmits need, like sending some kind of POST to netlify
 
-would {children} pass down from 'ContactSubmit' param being passed in?
+ - since the HOC exxantially creates a wrapper, it shouldn't be manipulating the original component
 */
 
 
