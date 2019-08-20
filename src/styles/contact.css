@@ -1,9 +1,31 @@
-input, textarea{
+ textarea{
   width: 100%;
   max-width: 800px;
+}
+input{
+  margin:10px;
 }
 
 form{
   width:calc(100% - 40px);
   text-align: center;
+}
+
+button {
+  font-family: 'Fugaz One', cursive;
+
+  color: white;
+  background-color: #bf7315;
+  height: 40px;
+  margin: 10px auto;
+  font-size: 20px;
+
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+button:hover{
+  color:#f4db5d;
+  background-color: #26a9bc;
 }

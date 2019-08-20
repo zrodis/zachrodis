@@ -20,33 +20,41 @@ would {children} pass down from 'ContactSubmit' param being passed in?
 */
 
 
-const contactSubmitComponent = (ContactSumbit, name) => {
+const contactSubmitComponent = (ContactSumbit, settings) => {
   class ComposedContactSumbit extends React.Component {
 
     handleSubmit(){
       console.log('handleSubmit');
       //post to netlify api
-      //or netlify just does this all autmatically
+      //or netlify just does this all autmatically and this is unecessary, neat
     }
 
     render(){
       console.log('ComposedContactSumbit PROPS', this.props);
+      console.log('ComposedContactSumbit settings', settings);
       return(
         <ContactSumbit {...this.props}>
 
-            <p>
-            <label>Your Name: <br/>
-            <input type="text" name="name" /></label>
-            </p>
+
+        <form name={settings.name} method="POST" data-netlify="true" action="/contact-thanks">
+          <input type="hidden" name="form-name" value={settings.name} />
+            {settings.getInputs()}
+
+
+            <div className="flexCenterColumn">
+              <label>Your Name:
+              <input type="text" name="name" /></label>
+
+              <label>Your Email:
+              <input type="email" name="email" /></label>
+            </div>
 
             <p>
-            <label>Your Email: <br/>
-            <input type="email" name="email" /></label>
+              <button type="submit">Send Message</button>
             </p>
 
-            <p>
-            <button type="submit">Send</button>
-            </p>
+        </form>
+
 
 
         </ContactSumbit>

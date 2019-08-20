@@ -1,23 +1,23 @@
 import React from "react";
 import contactSubmitComponent from './contactSubmitComponent'
 
-
+const settings ={
+  name:'hello',
+  getInputs: () => {
+    return (
+      <label>Message:<br/>
+      <textarea name="message"></textarea></label>
+    )
+  }
+}
 
 const HelloContact = (props) =>{
   console.log('HelloContact props', props);
-  return <div className="flexCenterColumn">
+  return <>
 
-    <form name={'hello-test'} method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="hello-test" />
-      <p>
-        <label>Message:<br/>
-        <textarea name="message"></textarea></label>
-      </p>
+    {props.children}
 
-      {props.children}
-    </form>
-
-  </div>
+  </>
 }
 
-export default contactSubmitComponent(HelloContact, 'hello-test')
+export default contactSubmitComponent(HelloContact, settings)
