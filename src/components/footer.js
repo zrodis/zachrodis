@@ -6,7 +6,7 @@ import Img from 'gatsby-image'
 import '../styles/footer.css'
 
 const FooterLink = ({to, title}) => {
-  return <a className="yellowLink" href={to}>{title}</a>
+  return <Link className="yellowLink" to={to}>{title}</Link>
 }
 
 

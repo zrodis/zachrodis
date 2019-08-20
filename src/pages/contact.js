@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 
 import contactSubmitComponent from '../components/forms/contactSubmitComponent'
 import HelloContact from '../components/forms/HelloContact'
+// import ContactTypes from '../components/forms/ContactTypeDropdown'
 
 import "../styles/contact.css"
 
@@ -21,6 +22,8 @@ form types:
 
 */
 
+
+
 const ContactPage = ({data}) => {
   const [ contactType, setContactType ] = useState('hello')
 
@@ -28,10 +31,11 @@ const ContactPage = ({data}) => {
     <Layout>
       <SEO title="Contact" />
       <div style={{margin: '20px auto', textAlign: 'center'}}>
-          <p style={{margin: '10px'}}>Hello. Please contact me if you would like a website / apps / illustrations, to report bugs in things i made, or to say hello.</p>
+          <p style={{margin: '10px'}}>Hello. Please contact me to inquire about websites, apps, illustrations, to report bugs in things i made, or just to say hello.</p>
 
       </div>
       <br/>
+
 
       <HelloContact className="test-class" />
     </Layout>

@@ -20,4 +20,11 @@ const HelloContact = (props) =>{
   </>
 }
 
-export default contactSubmitComponent(HelloContact, settings)
+export default contactSubmitComponent((props) =>{
+  console.log('HelloContact props', props);
+  return <>
+
+    {props.children}
+
+  </>
+}, settings)

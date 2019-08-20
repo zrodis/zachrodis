@@ -1,40 +1,46 @@
 import React, {useState, useEffect} from "react"
 import { Link } from "gatsby"
-import Fade from 'react-reveal/Fade';
+import { Location } from '@reach/router';
 
 import HeronIcon from '../../images/heron_icon'
 import DesktopLink from './DesktopHeaderLink'
+import SVGAnimation from './SVGAnimation'
+
 import '../../styles/header.css'
 
+
 const Header = ({ siteTitle }) => {
-  const [shortHeader, setShortHeader] = useState(false)
+  const [shortHeader, updateShortHeader] = useState(false)
 
   useEffect( () => {
     window.addEventListener('scroll', listenToScroll)
     return () => {
       window.removeEventListener('scroll', listenToScroll)
     }
-  }, [])
+  }, [shortHeader])
 
   function listenToScroll(evt){
-    if(window.pageYOffset > 150 ){
-      setShortHeader(true)
-    }else if(window.pageYOffset < 100 ){
-      setShortHeader(false)
+    if(!shortHeader && window.pageYOffset > 190 ){
+      updateShortHeader(true)
+      window.removeEventListener('scroll', listenToScroll)
+    }else if(shortHeader && window.pageYOffset < 100 ){
+      updateShortHeader(false)
+      window.removeEventListener('scroll', listenToScroll)
     }
   }
-/*
 
-  <div className="headerBGContainer">
-    <div style={{background:"#C1666B", flex: '5'}}></div>
-    <div style={{background:"#F7DC7B", flex: '16'}}></div>
-    <div style={{background:"#C1666B", flex: '13'}}></div>
 
-  </div>
-*/
   return(
-  <header style={{height: (shortHeader ? '50px': '100px')}}>
+  <header className={(shortHeader ? 'shortHeader': 'tallHeader')}>
 
+    <Location >
+
+    {({location}) => (
+      <div className='animationContainer'>
+        <SVGAnimation animate={(location.pathname=== '/' ? true : false)} />
+      </div>
+    )}
+    </Location >
 
 
     {!shortHeader &&
@@ -53,6 +59,8 @@ const Header = ({ siteTitle }) => {
         <DesktopLink to="/about" title="about" />
         <DesktopLink to="/contact" title="contact" />
     </div>
+
+
 
   </header>
 )}

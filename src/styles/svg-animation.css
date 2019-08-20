@@ -1,0 +1,15 @@
+
+.SVGAnimation{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  stroke-width: 1;
+  fill:none ;
+  /* stroke: #bf7315; */
+  stroke: #26a9bc;
+  stroke: #c79109;
+
+ stroke-linejoin:square ;
+ stroke-dasharray:9250 ;
+ /* stroke-linecap: square; */
+}
