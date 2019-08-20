@@ -23,6 +23,10 @@ would {children} pass down from 'ContactSubmit' param being passed in?
 const contactSubmitComponent = (ContactSumbit, settings) => {
   class ComposedContactSumbit extends React.Component {
 
+    validateEmail(){
+
+    }
+
     handleSubmit(){
       console.log('handleSubmit');
       //post to netlify api
@@ -38,8 +42,8 @@ const contactSubmitComponent = (ContactSumbit, settings) => {
 
         <form name={settings.name} method="POST" data-netlify="true" action="/contact-thanks">
           <input type="hidden" name="form-name" value={settings.name} />
-            {settings.getInputs()}
 
+            {settings.getInputs()}
 
             <div className="flexCenterColumn">
               <label>Your Name:
@@ -52,15 +56,11 @@ const contactSubmitComponent = (ContactSumbit, settings) => {
             <p>
               <button type="submit">Send Message</button>
             </p>
-
         </form>
-
-
 
         </ContactSumbit>
       )
     }
-
   }
 
   return ComposedContactSumbit
