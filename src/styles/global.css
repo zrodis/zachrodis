@@ -26,7 +26,29 @@
 
   color: #fff !important;
 }
+button {
+  font-family: 'Fugaz One', cursive;
 
+  color: white;
+  background-color: #bf7315;
+  height: 40px;
+  margin: 10px auto;
+  font-size: 20px;
+
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+button:hover{
+  color:#f4db5d;
+  background-color: #26a9bc;
+}
+
+button.disabled{
+  color: white;
+  background-color: #666;
+}
 html{
   background-color: #353433;
   color: #fffad4;

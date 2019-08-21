@@ -41,7 +41,6 @@ const IndexPage = ({data}) => {
 
   let [show, setShow] = useState(0)
 
-
   function handleExpansion(id){
     setShow(id)
   }

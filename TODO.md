@@ -1,6 +1,5 @@
 
-header art:
-svg stroke-dashoffset animation
+contact form types
 
 main page add:
   -snow pirates

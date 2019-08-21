@@ -6,7 +6,7 @@ import '../../styles/svg-animation.css'
 export default (props) => (
 <div className="SVGAnimation">
   <Spring
-  config={{ tension: 30, friction: 20 }}
+    config={{ tension: 8, friction: 30 }}
     from={{ x: (props.animate ? 9000 : 0) }}
     to={{ x: 0 }}
   >
