@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import BigLink from "../components/BigLink"
+import {BigLinkOut} from "../components/BigLink"
 
 
 const FriendPage = ({data}) => (
@@ -11,11 +11,11 @@ const FriendPage = ({data}) => (
     <div style={{margin: '20px auto', textAlign: 'center'}}>
         <h3 style={{margin: '10px'}}>Friends and Family Links</h3>
 
-        <BigLink to={"https://www.circleupstories.com/"} title={"Circle Up Stories"}/>
+        <BigLinkOut to={"https://www.circleupstories.com/"} title={"Circle Up Stories"}/>
 
-        <BigLink to={"https://kimfolse.com/"} title={"Kim Folse"}/>
+        <BigLinkOut to={"https://kimfolse.com/"} title={"Kim Folse"}/>
 
-        <BigLink to={"http://rodis.net/"} title={"rodis.net"}/>
+        <BigLinkOut to={"http://rodis.net/"} title={"rodis.net"}/>
 
     </div>
   </Layout>

@@ -1,3 +1,22 @@
+.SVGAnimationContainer{
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+}
+.svgHalf{
+  width: 100%;
+
+}
+
+.svgHalf.left{
+  margin-right: -50%;
+
+}
+.svgHalf.right{
+  margin-left: -50%;
+
+}
 
 .SVGAnimation{
   height: 100%;
@@ -9,6 +28,7 @@
   stroke: #26a9bc;
   stroke: #c79109;
 
+overflow: visible;
  stroke-linejoin:square ;
  stroke-dasharray:9550 ;
  /* stroke-linecap: square; */

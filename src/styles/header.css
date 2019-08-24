@@ -24,8 +24,10 @@ header{
   to {  height: 140px;}
 }
 
-header:hover{
+header:hover .SVGAnimation{
   /* background: #dda94b; */
+  /* stroke:#f4db5d; */
+
 }
 .tallHeader{
   height:140px;

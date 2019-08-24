@@ -21,6 +21,7 @@
 .yellowLink{
   font-weight: bold;
   color: #dfaf00 !important;
+  text-decoration: underline !important;
 }
 .yellowLink:hover{
 
@@ -86,6 +87,10 @@ body, main{
 p {
   font-family: 'Ubuntu', sans-serif;
   font-size: 14px;
+}
+.textSection{
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 @media all and (min-width: 430px) {
