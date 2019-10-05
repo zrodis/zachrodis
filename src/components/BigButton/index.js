@@ -1,6 +1,6 @@
 import React, {Fragment} from "react"
+import Description from './Description'
 import './BigButton.css'
-
 
 export default (props) => {
   const {
@@ -13,6 +13,13 @@ export default (props) => {
     id,
     show,
   } = props
+
+  const descriptionProps = {
+      href,
+      title,
+      description,
+      show,
+  }
 
   return (
 
@@ -27,18 +34,9 @@ export default (props) => {
             <div className="big-button-overlay-wrap" >
               <h1>{title}</h1>
 
-              <div
-                className="big-button-description"
-                style={{
-                    height: `${ show ? 'auto' : 0}`,
-                    opacity: `${ show ? 1 : 0}`}
-                }
-              >
-                {description.split('\\n').map((item, key) => (<Fragment key={key}>{item}<br/> </Fragment>))}
-                <a href={ href }  className="big-anchor" style={{visibility: `${ show ? 'visible' : 'hidden'}`} }>
-                  <div className="clickout-button"> {'Go to ' + title + ' >'} </div>
-                </a>
-              </div>
+              <Description
+                {...descriptionProps}
+              />
 
               <div className="big-button-description-mobile">
                 <a href={ href } className="big-anchor" >

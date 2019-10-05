@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import BigButton from "../components/BigButton"
 import AccordionImage from '../images/ah-wideimage'
 import BuildPiggyImage from '../images/build-piggy-image'
-import CLocktowerImage from '../images/clocktower-image'
+import ClocktowerImage from '../images/clocktower-image'
 import RobotGuardianImage from '../images/robotguardian-wideimage'
 
 import '../styles/home.css'
@@ -25,7 +25,7 @@ const bigButtonData = [
   },
   {
     href:'https://zrodis-clocktower.herokuapp.com/',
-    image:<CLocktowerImage />,
+    image:<ClocktowerImage />,
     title:'Clocktowers',
     description:'"The year is 3009.\n The mysteries of analog clocks have long been forgotten, but clock enthusiasts of the future still need to know how many times the bell will ring between two given times."',
   },
