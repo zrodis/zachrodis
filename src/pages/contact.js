@@ -39,7 +39,6 @@ const ContactPage = ({data}) => {
           </select>
       </div>
 
-
       <br/>
       <ContactFormsFilter type={contactType} />
 

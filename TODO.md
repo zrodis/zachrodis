@@ -1,5 +1,5 @@
 
-contact form types
+BUG: home page hover, doesnt go to hover-off state properly 
 
 main page add:
   -snow pirates
