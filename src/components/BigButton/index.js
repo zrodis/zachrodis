@@ -22,7 +22,6 @@ export default (props) => {
   }
 
   return (
-
     <div
       className={'big-button ' + (show ? 'stretched' : 'not-stretched')}
       onMouseEnter={() => handleExpansion(id)}
@@ -46,7 +45,6 @@ export default (props) => {
 
             </div>
           </div>
-
     </div>
   )
 }

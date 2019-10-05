@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -39,14 +39,14 @@ const bigButtonData = [
 
 const IndexPage = ({data}) => {
 
-  let [show, setShow] = useState(0)
+  let [show, setShow] = useState(null)
 
   function handleExpansion(id){
     setShow(id)
   }
 
   function handleCollapse(){
-    setShow(0)
+    setShow(null)
   }
 
   return (
