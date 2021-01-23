@@ -2,6 +2,8 @@ import React from "react";
 import ContactForm from './ContactForm'
 
 //use display=none instead of only rendering what is needed, that way netlify can parse the forms
+const formExplanation = 'If you can answer any of these questions it will help to get started, but its not required:'
+
 export default ({type}) => {
   console.log('contact type', type);
 
@@ -9,7 +11,7 @@ export default ({type}) => {
         <>
 
           <ContactForm name="website" type={type}>
-              <p>If you can answer any of these questions it will help to get started:</p>
+            <p>{formExplanation}</p>
             <label>Who or what is the website for? <br/>What does it need to contain or what product does it support?<br/>
             <textarea name="whatis"></textarea></label>
             <br/><br/>
@@ -20,7 +22,7 @@ export default ({type}) => {
 
 
           <ContactForm name="app" type={type}>
-              <p>If you can answer any of these questions it will help to get started:</p>
+            <p>{formExplanation}</p>
             <label>Who or what is the app for? <br/>What does it need to contain or what product does it support?<br/>
             <textarea name="whatis"></textarea></label>
             <br/><br/>
@@ -31,7 +33,7 @@ export default ({type}) => {
 
 
           <ContactForm name="illustration" type={type}>
-              <p>If you can answer any of these questions it will help to get started:</p>
+              <p>{formExplanation}</p>
             <label>
               What is the illustration work for?<br/>
               How many images will you need?<br/>
@@ -44,7 +46,7 @@ export default ({type}) => {
           </ContactForm>
 
           <ContactForm name="bug" type={type}>
-              <p>If you can answer any of these questions it will help to get started:</p>
+            <p>{formExplanation}</p>
             <label>
               Where did you find the bug and what browser and operating system are you using?<br/>
               <textarea name="whatis"></textarea>
