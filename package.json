@@ -2,7 +2,7 @@
   "name": "zachrodis",
   "private": true,
   "description": "Stuff made by Zach Rodis",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Zach Rodis <zachrodis@gmail.com>",
   "dependencies": {
     "@reach/router": "^1.2.1",
@@ -33,9 +33,9 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "yarn develop",
+    "start": "yarn dev",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
