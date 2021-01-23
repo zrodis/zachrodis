@@ -31,11 +31,9 @@ const AboutPage = ({data}) => (
 
       <div style={{margin: '20px'}}>
 
-        <p>
-        <a href="https://github.com/zipfreeman" style={{fontWeight:'bold', hover:"red"}}>Here</a> is my github.
-          Don't tell anyone, but it's under the alias Zip Freeman. Dang I shouldn't have put that information on the internet, oh well too late now, can't undo.
-          Mainly though I use my raspberry pi as a repo.
-        </p>
+
+        <a href="https://github.com/zrodis" style={{fontWeight:'bold', hover:"red"}}>Here</a> is my github.
+       
         I live in Philadelphia.
       </div>
       <div style={{margin: '20px'}}>

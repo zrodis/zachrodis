@@ -22,7 +22,7 @@ const Footer = () => {
           <FooterLink to={"/friends"} title={"Friends and Family websites"}/>
 
         </div>
-          <div className="finePrint" > ©2019 Zach Rodis </div>
+          <div className="finePrint" > {`©1986 - ${new Date().getFullYear()} Zach Rodis`} </div>
         </div>
 
     </footer>
