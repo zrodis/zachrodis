@@ -2,7 +2,7 @@ import React from "react";
 import ContactForm from './ContactForm'
 
 //use display=none instead of only rendering what is needed, that way netlify can parse the forms
-const formExplanation = 'If you can answer any of these questions it will help to get started, but its not required:'
+const formExplanation = 'If you can answer any of these questions it will help to get started, but it\'s not required:'
 
 export default ({type}) => {
   console.log('contact type', type);
