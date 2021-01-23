@@ -12,10 +12,10 @@ import '../styles/home.css'
 
 const bigButtonData = [
   {
-  href: 'https://accordionhelper.com',
-  image:<AccordionImage />,
-  title:'Accordion Helper',
-  description:"Accordion Helper is an interactive accordion chord chart made with React.js and Redux.\nIt helps accordion players figure out chords and fingering variations.\n Updated monthly(-ish) based on user feedback.",
+    href: 'https://accordionhelper.com',
+    image:<AccordionImage />,
+    title:'Accordion Helper',
+    description:"Accordion Helper is an interactive accordion chord chart made with React.js and Redux.\nIt helps accordion players figure out chords and fingering variations.",
   },
   {
     href:'https://www.kickstarter.com/projects/circleupstories/build-piggy-build',
