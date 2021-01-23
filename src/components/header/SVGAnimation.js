@@ -12,7 +12,7 @@ let svgreversed = "M" + svgReverse.reverse(svgpath2).replace('Z', '')
 
 
 export default (props) => (
-<div className="SVGAnimationContainer">
+<div className={`SVGAnimationContainer${props.animate ? ' SVGSlide' : ''}`}>
   <div className="svgHalf left">
   <Spring
     config={{ tension: 8, friction: 60 }}

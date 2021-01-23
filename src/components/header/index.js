@@ -7,7 +7,6 @@ import SVGAnimation from './SVGAnimation'
 
 import '../../styles/header.css'
 
-
 const Header = ({ siteTitle }) => {
   const [shortHeader, updateShortHeader] = useState(false)
 
@@ -36,7 +35,7 @@ const Header = ({ siteTitle }) => {
 
     {({location}) => (
       <div className='animationContainer'>
-        <SVGAnimation animate={(location.pathname=== '/' ? true : false)} />
+        <SVGAnimation animate={(location.pathname === '/')} />
       </div>
     )}
     </Location >

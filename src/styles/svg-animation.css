@@ -1,35 +1,45 @@
-.SVGAnimationContainer{
+.SVGAnimationContainer {
   display: flex;
   height: 100%;
   width: 100%;
-
 }
-.svgHalf{
+
+.SVGSlide {
+  animation: zoomInHeader 5s;
+  transition: ease-in-out;
+}
+@keyframes zoomInHeader {
+  from {
+    transform: translateY(-30%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.svgHalf {
   width: 100%;
-
 }
 
-.svgHalf.left{
+.svgHalf.left {
   margin-right: -50%;
-
 }
-.svgHalf.right{
+.svgHalf.right {
   margin-left: -50%;
-
 }
 
-.SVGAnimation{
+.SVGAnimation {
   height: 100%;
   width: 100%;
   margin: 0;
   stroke-width: 1;
-  fill:none ;
+  fill: none;
   /* stroke: #bf7315; */
   stroke: #26a9bc;
   stroke: #c79109;
 
-overflow: visible;
- stroke-linejoin:square ;
- stroke-dasharray:9550 ;
- /* stroke-linecap: square; */
+  overflow: visible;
+  stroke-linejoin: square;
+  stroke-dasharray: 9550;
+  /* stroke-linecap: square; */
 }

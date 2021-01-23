@@ -1,4 +1,4 @@
-header{
+header {
   display: flex;
   position: sticky;
   flex-direction: column;
@@ -16,36 +16,35 @@ header{
   transition: 100ms;
   /* animation-name: introHeader; */
   animation-duration: 500ms;
-  z-index:10;
+  z-index: 10;
 }
 
 @keyframes introHeader {
-  from {  height: 0px;}
-  to {  height: 140px;}
+  from {
+    height: 0px;
+  }
+  to {
+    height: 140px;
+  }
 }
 
-header:hover .SVGAnimation{
-  /* background: #dda94b; */
-  /* stroke:#f4db5d; */
-
+.tallHeader {
+  height: 140px;
 }
-.tallHeader{
-  height:140px;
+.shortHeader {
+  height: 50px;
 }
-.shortHeader{
-  height:50px;
-}
-.animationContainer{
+.animationContainer {
   position: absolute;
   width: 100%;
   max-width: 1000px;
   min-width: 600px;
   z-index: 1;
 }
-.zachrodisContainer a{
+.zachrodisContainer a {
   text-decoration: none;
 }
-.zachrodisContainer{
+.zachrodisContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -53,35 +52,32 @@ header:hover .SVGAnimation{
   margin-bottom: 10px;
   /* align-content: center; */
   z-index: 2;
-
 }
 .zachrodisContainer:hover {
   /* background: #bf7315; */
   /* background: #490f07; */
-
 }
-.zachrodisContainer:hover > a h1{
+.zachrodisContainer:hover > a h1 {
   color: #f4db5d;
 
   text-shadow: 10px 5px #26a9bc;
   padding-right: 6px;
   /* padding-bottom: 16px; */
 
-/* color: #26a9bc; */
+  /* color: #26a9bc; */
 
   text-decoration: none;
 }
 
-.zachrodis h1{
+.zachrodis h1 {
   /* color: #bf7315; */
 
   text-shadow: 5px 5px #26a9bc;
-/* color: #ead853; */
-color: #fff;
-
+  /* color: #ead853; */
+  color: #fff;
 }
 
-.DesktopNav{
+.DesktopNav {
   position: sticky;
 
   display: flex;
@@ -92,15 +88,13 @@ color: #fff;
   /* background: inherit; */
   color: inherit;
   z-index: 2;
-
-
 }
 
 .DesktopHeaderLink {
   margin: 0 10px;
   margin-top: 5px;
 }
-.DesktopHeaderLink a{
+.DesktopHeaderLink a {
   text-decoration: none;
 }
 .DesktopHeaderLink a h2 {
@@ -111,8 +105,6 @@ color: #fff;
   margin-left: 4px;
   margin-right: 4px;
   text-decoration: none;
-
-
 }
 /* .DesktopHeaderLink:first-child a h2 {
 
@@ -128,19 +120,14 @@ color: #fff;
   text-shadow: 4px 0px #26a9bc;
   padding-right: 4px;
   padding-left: 0px;
-   margin-left: 2px;
-   margin-right: 2px;
-
-
-
+  margin-left: 2px;
+  margin-right: 2px;
 }
 @media all and (min-width: 420px) {
-  .zachrodisContainer{
+  .zachrodisContainer {
     margin-bottom: 0px;
-
   }
   .DesktopHeaderLink a h2 {
-
     font-size: 22px;
     line-height: 20px;
   }
