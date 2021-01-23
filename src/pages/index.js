@@ -21,7 +21,7 @@ const bigButtonData = [
     href:'https://www.kickstarter.com/projects/circleupstories/build-piggy-build',
     image:<BuildPiggyImage />,
     title:'Build Piggy Build',
-    description:"Collect all parts of a matching house and give your piggy the suburban paradise they've always dreamed of.\nI did the illustrations. Check out the Kickstarter.",
+    description:"Collect all parts of a matching house and give your piggy the suburban paradise they've always dreamed of.\nI did the illustrations.",
   },
   {
     href:'https://zrodis-clocktower.herokuapp.com/',
