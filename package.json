@@ -37,7 +37,8 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "yarn dev",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "release": "curl -X POST -d {} https://api.netlify.com/build_hooks/600c4dd60b6423b124dc9b78"
   },
   "repository": {
     "type": "git",
